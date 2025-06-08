@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mov-Eat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+  .nav-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  /* Apply to dropdown items */
+  .dropdown-item:hover {
+    background-color: #343a40;
+    color: #fff;
+  }
+
+  /* Social icons hover effect */
+  .text-end a:hover svg {
+    transform: scale(1.1);
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  /* Optional: Add subtle shadow */
+  .text-end a:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+    .movie-hero-section {
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .z-2 {
+      z-index: 2;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 2rem 0;
+      text-align: center;
+    }
+  .movie-hero-section .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.welcome-heading {
+  transition: all 0.3s ease;
+}
+
+.welcome-heading:hover {
+  color: #ffc107;
+  transform: translateX(5px);
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+/* Typing animation */
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid rgba(255,255,255,0.75);
+  width: 0;
+  animation: typing 3s steps(40, end) forwards;
+  font-family: monospace;
+  font-size: 1.25rem;
+}
+
+.delay-2 {
+  animation-delay: 1.5s;
+}
+
+.delay-4 {
+  animation-delay: 3.5s;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 75%; }
+}
+
+
+  </style>
+</head>
+<body class="bg-dark text-white">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<header class="p-3 text-bg-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4 3h16a1 1 0 0 1 1 1v4H3V4a1 1 0 0 1 1-1zm17 6v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9h18zm-8 2v6l5-3-5-3z"/>
+        </svg>
+        <span class="ms-2 fw-bold">Mov-Eat</span>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-end mb-md-0 me-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-2 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Movies
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="Action/index.html">Action</a></li>
+            <li><a class="dropdown-item" href="Comedy/index.html">Comedy</a></li>
+            <li><a class="dropdown-item" href="Drama/index.html">Drama</a></li>
+            <li><a class="dropdown-item" href="Horror/index.html">Horror</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-2 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Series
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="Crime/index.html">Crime</a></li>
+            <li><a class="dropdown-item" href="Fantasy/index.html">Fantasy</a></li>
+            <li><a class="dropdown-item" href="Sci-Fi/index.html">Sci-Fi</a></li>
+            <li><a class="dropdown-item" href="Thriller/index.html">Thriller</a></li>
+          </ul>
+        </li>
+
+        <!-- Generic (non-dropdown) Items -->
+        <li><a href="top_Rated/index.html" class="nav-link px-2 text-white">Top Rated</a></li>
+        <li><a href="my_List/index.html" class="nav-link px-2 text-white">My List</a></li>
+      </ul>
+
+      <!-- SOCIAL ICONS START -->
+      <div class="text-end d-flex gap-3">
+        <a href="https://www.linkedin.com/in/manos-seimanis-4099ba289" target="_blank" class="text-white" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 448 512">
+            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-338C24 110 0 86 0 57a57 57 0 0 1 114 0c0 29-23.81 53-60.16 53zM447.9 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.8-43.8 31.1-2.2 5.4-2.8 12.9-2.8 20.4V448h-92.6s1.2-261.5 0-288.1h92.6v40.8c12.3-19 34.2-46.1 83.2-46.1 60.8 0 106.4 39.7 106.4 125.1z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/manos_seimanis/" target="_blank" class="text-white" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 448 512">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.9 224.1 370.9 339 319.6 339 255.9 287.7 141 224.1 141zm0 186.6c-39.5 0-71.7-32.2-71.7-71.7s32.2-71.7 71.7-71.7 71.7 32.2 71.7 71.7-32.2 71.7-71.7 71.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5S363.5 7.1 327.8 5.4C292.3 3.6 178.7 3.6 143.2 5.4 107.5 7.1 75.9 15.3 49.6 41.5 23.3 67.8 15.1 99.4 13.4 135.1 11.6 170.6 11.6 284.3 13.4 319.8c1.7 35.7 9.9 67.3 36.2 93.5s57.8 34.5 93.5 36.2c35.5 1.7 149.1 1.7 184.6 0 35.7-1.7 67.3-9.9 93.5-36.2s34.5-57.8 36.2-93.5c1.7-35.5 1.7-149.1 0-184.6zM398.8 388c-7.8 19.5-22.9 34.6-42.4 42.4-29.4 11.7-99.2 9-132.4 9s-103 2.6-132.4-9c-19.5-7.8-34.6-22.9-42.4-42.4-11.7-29.4-9-99.2-9-132.4s-2.6-103 9-132.4c7.8-19.5 22.9-34.6 42.4-42.4 29.4-11.7 99.2-9 132.4-9s103-2.6 132.4 9c19.5 7.8 34.6 22.9 42.4 42.4 11.7 29.4 9 99.2 9 132.4s2.7 103-9 132.4z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/manoseim13" target="_blank" class="text-white" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+        </a>
+      </div>
+      <!-- SOCIAL ICONS END -->
+
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div id="movie-hero-section" class="movie-hero-section d-flex flex-column justify-content-center text-white" style="background-image: url('poster.jpg'); background-size: cover; background-position: center;">
+    <div class="overlay"></div>
+    <div class="container position-relative z-2">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="display-3 fw-bold mb-3 welcome-heading">Welcome to Mov-Eat</h1>
+          <p class="lead typing-text">Your gateway to handpicked movies and series</p>
+          <p class="lead typing-text delay-2">Organized by genre and ready to explore.</p>
+          <p class="fw-light typing-text delay-4">Hover the menu to browse. Build your personal watch vault.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+<footer>
+  <div class="container">
+    <p class="mb-0">© 2025 Mov-Eat | A Portfolio Project by Manos Seimanis</p>
+    <small>Made with ❤️ using HTML, CSS, Bootstrap, and JavaScript</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js.js"></script> <!-- Your JS file -->
+</body>
+</html>
